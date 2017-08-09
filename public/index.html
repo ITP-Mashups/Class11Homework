@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>chat.nice</title> 
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="jquery-2.2.4.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href='style.css' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		
+		<div class="bold_text">CHAT.NICE</div>
+			<!-- player -->
+			<div id="left">
+				<div id="player_container">
+					<iframe id = "player" src="https://open.spotify.com/embed?uri=spotify:user:partyjail:playlist:7fdVPNatBjc127f3DF0Cd9" width="300" height="380" frameborder="0" allowtransparency="true">
+					</iframe>
+				</div>
+				<div>
+					<input id="query" type="text" placeholder="search for music"></input>
+				</div>
+				<div class="button_container">
+					<!-- insert type dropdown here in later versions -->
+					<button type="button" class="btn btn-md btn-default-outline" id="search">search</button>
+				</div>
+			</div>
+			<!-- chat -->
+			<div id="right">
+				<div><input id="username" type="text" placeholder="enter a username"></input></div>
+				<input id="chatInput" type="text" placeholder="chat"></input><button type="button" class="btn btn-md btn-default-outline" id="chatSend">send</button>
+				<ul id="messages"></ul>
+			</div>
+		</tr></table>
+		<script src="script.js"></script>
+	</body>
+</html>
